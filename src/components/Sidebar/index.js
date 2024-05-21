@@ -75,14 +75,14 @@ const Sidebar = () => {
           to="/public-page/?p=5">
           <div><FaEnvelope /></div>
         </Link>
-        <Link 
-          to="https://kevinm1031.github.io/digital-clock/?del=25">
+        <a 
+          href="https://kevinm1031.github.io/digital-clock/?del=25">
           <div className="hidden"><FaClock /></div>
-        </Link>
-        <Link 
-          to="https://kevinm1031.github.io/Exponentiation_Bubbles/">
+        </a>
+        <a 
+          href="https://kevinm1031.github.io/Exponentiation_Bubbles/">
           <div className="hidden"><FaGamepad /></div>
-        </Link>
+        </a>
       </nav>
       <ul>
         <li>
