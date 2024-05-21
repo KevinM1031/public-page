@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/public-page/static/css/main.3aa47922.css",
+    "main.js": "/public-page/static/js/main.fc39e08f.js",
+    "static/js/453.df39b520.chunk.js": "/public-page/static/js/453.df39b520.chunk.js",
+    "static/media/Roboto-Thin-webfont.woff": "/public-page/static/media/Roboto-Thin-webfont.682b5f610bccc163e720.woff",
+    "static/media/icon.png": "/public-page/static/media/icon.c44793a90ac5d210f3e3.png",
+    "static/media/CoolveticaRg-Regular.woff": "/public-page/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/public-page/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/public-page/index.html",
+    "main.3aa47922.css.map": "/public-page/static/css/main.3aa47922.css.map",
+    "main.fc39e08f.js.map": "/public-page/static/js/main.fc39e08f.js.map",
+    "453.df39b520.chunk.js.map": "/public-page/static/js/453.df39b520.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aa47922.css",
+    "static/js/main.fc39e08f.js"
+  ]
+}
