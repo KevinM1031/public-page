@@ -1,5 +1,6 @@
 {
-  "name": "react-portfolio-website",
+  "homepage": "https://KevinM1031.github.io/public-page",
+  "name": "public-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,6 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
