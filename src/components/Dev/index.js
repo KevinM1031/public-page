@@ -166,7 +166,7 @@ const Dev = () => {
             </div>
         </div>
 
-        <Loader type="pacman" />
+        <Loader type="ball-clip-rotate-multiple" style={{ position: 'fixed' }} />
     </>
     )
 }

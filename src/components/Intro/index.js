@@ -1,5 +1,5 @@
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/icon.png'
 import Logo from './Logo'
 import './index.scss'
 import { motion } from 'framer-motion'

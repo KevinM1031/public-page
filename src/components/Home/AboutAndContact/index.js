@@ -2,7 +2,7 @@ import './index.scss'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { useEffect, useRef, useState } from 'react'
-import { PiButterfly, PiCake, PiCookingPot, PiGameController, PiGlobeHemisphereEast, PiMapPinArea, PiMountains, PiPlant, PiSuitcase, PiUser } from 'react-icons/pi'
+import { PiMapPinArea, PiSuitcase, PiUser } from 'react-icons/pi'
 
 const AboutAndContact = () => {
 

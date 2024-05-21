@@ -26,7 +26,7 @@ const Home = () => {
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}
-          link="/dev"
+          link="/public-page/dev"
         />
 
         <Page 
@@ -44,13 +44,15 @@ const Home = () => {
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}
-          link="/lang"
+          link="/public-page/lang"
         />
 
         <AboutAndContact />
 
       </div>
-      <Loader type="pacman" />
+
+      <Loader type="ball-clip-rotate-multiple" style={{ position: 'fixed' }} />
+
     </>
   )
 }

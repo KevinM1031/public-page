@@ -1,5 +1,6 @@
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+$primary-color: #ff2164;
+@import '~loaders.css/src/animations/ball-clip-rotate-multiple.scss';
 
 @font-face {
   font-family: 'Coolvetica';

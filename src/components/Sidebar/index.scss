@@ -48,6 +48,10 @@
       position: absolute;
       height: 210px;
       width: 100%;
+
+      .hidden {
+        opacity: 0;
+      }
   
       div {
         font-size: 28px;
@@ -70,6 +74,7 @@
           &:hover {  
             color: #ff2164;
             scale: 1.5;
+            opacity: 1;
           }
         }
       }
