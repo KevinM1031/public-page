@@ -76,11 +76,11 @@ const Sidebar = () => {
           <div><FaEnvelope /></div>
         </Link>
         <a 
-          href="https://kevinm1031.github.io/digital-clock/?del=25">
+          href="https://kevinm1031.github.io/digital-clock/?del=25" target="_blank" rel="noreferrer">
           <div className="hidden"><FaClock /></div>
         </a>
         <a 
-          href="https://kevinm1031.github.io/Exponentiation_Bubbles/">
+          href="https://kevinm1031.github.io/Exponentiation_Bubbles/" target="_blank" rel="noreferrer">
           <div className="hidden"><FaGamepad /></div>
         </a>
       </nav>
