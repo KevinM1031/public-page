@@ -1,0 +1,177 @@
+.intro-page {
+
+  .text-zone {
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    max-height: 90%;
+    left: 60%;
+
+    @media screen and (max-width: 1200px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .topLine {
+    color: #fff;
+    width: 440px;
+    position: absolute;
+    animation-name: topLineAnimation;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scaleX(0%);
+  }
+
+  .bottomLine {
+    color: #fff;
+    width: 440px;
+    position: absolute;
+    animation-name: bottomLineAnimation;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scaleX(0%);
+  }
+
+  p {
+    .middleTop {
+      color: #f1ced9;
+      font-size: 24px;
+      line-height: 24px;
+      position: absolute;
+      font-family: 'Roboto';
+      transform: translateY(40px);
+      opacity: 0;
+      animation: fadeIn;
+      animation-delay: 3.2s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .middleBottom {
+      color: #f1ced9;
+      font-size: 20px;
+      line-height: 24px;
+      position: absolute;
+      font-family: 'Roboto';
+      transform: translateY(100px);
+      opacity: 0;
+      animation: fadeIn;
+      animation-delay: 3.2s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  h1 {
+    color: #ff2164;
+    margin: 0;
+    font-family: 'Coolvetica';
+    left: 60%;
+
+    .topHalf {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 72px;
+      position: absolute;
+      animation-name: topHalfAnimation;
+      animation-delay: 3s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      transform: translateY(-71%);
+    }
+
+    .bottomHalf {
+      font-size: 42px;
+      line-height: 64px;
+      font-weight: 800;
+      position: absolute;
+      animation-name: bottomHalfAnimation;
+      animation-delay: 3s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      transform: translateY(21%);
+    }
+
+    img {
+      margin-left: 20px;
+      margin-bottom: -2px;
+      width: 48px;
+      opacity: 0;
+      height: auto;
+      animation: smallIconAnimation;
+      animation-timing-function: ease-in;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .smallIcon {
+      display: inline-block;
+      z-index: 500;
+
+      & {
+        scale: 100%;
+        rotate: 0deg;
+        transition: scale 0.3s ease-in-out, rotate 0.3s ease-in-out;
+      }
+
+      &:hover {
+        scale: 150%;
+        rotate: 10deg;
+      }
+    }
+  }
+
+  @keyframes smallIconAnimation {
+    from {
+        opacity: 0;
+        transform: scale(300%);
+        filter: blur(30px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(100%);
+        filter: blur(0px);
+    }
+  }
+  
+  @keyframes topHalfAnimation {
+    from {
+      transform: translateY(-71%);
+    }
+    to {
+      transform: translateY(-111%);
+    }
+  }
+  
+  @keyframes bottomHalfAnimation {
+    from {
+      transform: translateY(21%);
+    }
+    to {
+      transform: translateY(71%);
+    }
+  }
+  
+  @keyframes topLineAnimation {
+    from {
+      transform: scaleX(0%)
+    }
+    to {
+      transform: scaleX(100%);
+    }
+  }
+  
+  @keyframes bottomLineAnimation {
+    from {
+      transform: scaleX(0%)
+    }
+    to {
+      transform: scaleX(100%);
+    }
+  }
+
+}

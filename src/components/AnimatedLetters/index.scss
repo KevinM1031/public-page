@@ -8,16 +8,15 @@
   min-width: 10px;
 
   & {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   &:hover {
-    filter: blur(5px);
+    transform: rotateY(180deg);
   }
 }
 
-@for $i from 1 through 35 {
+@for $i from 1 through 40 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 10 + 1}s;
   }

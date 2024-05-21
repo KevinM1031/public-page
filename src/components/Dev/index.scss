@@ -1,0 +1,153 @@
+.dev-page {
+  
+    @keyframes slide {
+      0% {
+        transform:translateX(-25%);
+      }
+      100% {
+        transform:translateX(25%);
+      }
+    }
+  
+    .page {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      scroll-snap-align: center;
+      perspective: 500px;
+    }
+  
+    .text-zone {
+      position: absolute;
+      top: 12vh;
+      left: 10%;
+      width: 660px;
+    }
+
+    .project-zone {
+        position: absolute;
+        right: 10%;
+        width: 600px;
+        height: 70%
+      }
+
+    .techs {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 50;
+        width: 100%;
+        font-family: monospace;
+      }
+  
+    h1 {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+      color: #ff2164;
+      margin: 0;
+      font-family: 'Coolvetica';
+  
+      .topHalf {
+        position: absolute;
+        font-size: 52px;
+        line-height: 64px;
+        font-weight: 400;
+      }
+  
+      .bottomHalf {
+        position: absolute;
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 800;
+      }
+  
+      .middleBottom {
+        color: #f1ced9;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        position: absolute;
+        font-family: 'Roboto';
+      }
+
+      .experience {
+            color: #f1ced9;
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+            padding: 10px 14px 10px 18px;
+            border: 1px solid #ff2164;
+            float: left;
+            background: #111;
+            position: absolute;
+            z-index: 0;
+            border-radius: 10px;
+            width: 660px;
+        }
+        
+        .experience:before {
+            content: '';
+            background: linear-gradient(45deg, #ff2164, #f1ced9, #ff2164, #130e10, #ff2164);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 1;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        
+        .experience:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+    }
+
+    .project {
+        color: #f1ced9;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        padding: 10px 14px 10px 18px;
+        border: 1px solid #ff2164;
+        background: #111;
+        z-index: 0;
+        border-radius: 10px;
+        width: 100%;
+        height: 44%;
+        position: absolute;
+
+        & {
+            scale: 100%;
+            rotate: 0deg;
+            z-index: 0;
+            transition: scale 0.5s ease-in-out, z-index 0.5s ease-in-out;
+          }
+    
+          &:hover {
+            scale: 130%;
+            z-index: 10;
+          }
+    }
+  }
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
