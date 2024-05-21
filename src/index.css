@@ -13,7 +13,7 @@ html {
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
-  background: var(--background);
+  background: var(--background); 
 }
 
 ::-webkit-scrollbar-thumb {
