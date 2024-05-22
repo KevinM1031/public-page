@@ -29,7 +29,7 @@ const Sidebar = () => {
   }
 
   const scrollToContact = () => {
-    window.scrollTo(0, (window.innerHeight > 1200) ? window.innerHeight*4 : window.innerHeight*5)
+    window.scrollTo(0, (window.innerWidth > 1200) ? window.innerHeight*4 : window.innerHeight*5)
   }
 
   const [searchParams] = useSearchParams();

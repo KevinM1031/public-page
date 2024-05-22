@@ -1,6 +1,5 @@
 html {
   font-size: 62.5%;
-  scroll-snap-type: y mandatory;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -8,6 +7,16 @@ html {
   -ms-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media screen and (min-height: 560px) {
+    scroll-snap-type: y mandatory;
+  }
+
+  @media screen and (max-width: 380px) {
+    overflow-x: auto;
+
+  }
 }
 
 ::-webkit-scrollbar {
@@ -33,11 +42,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #130e10;
   display: block;
-}
-
-.dashboard {
-  margin-top: 200px;
-  margin-left: 200px;
+  min-height: 660px;
+  min-width: 300px;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {

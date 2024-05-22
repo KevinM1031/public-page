@@ -9,13 +9,13 @@ const Home = () => {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
         initial={{ position: 'fixed', width: '100vw', height: '100vh' }}>
           <div className="container home-page">
             <div className="bg"></div>
             <div className="bg bg2"></div>
           </div>
-      </motion.div>
+      </motion.div> */}
 
       <div className="container home-page">
         <Intro />

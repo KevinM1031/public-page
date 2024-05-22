@@ -35,33 +35,30 @@ const AboutAndContact = () => {
 
     const Contact = () => (
         <div className={showContent ? "right" : "left"}>
-            <h1>
-                <motion.span
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.6, duration: 0.5 }}
-                    variants={{
-                    visible: { color: '#ff2164', opacity: 1, x: 0 },
-                    hidden: { fontSize: 48, fontWeight: 400, color: '#fff', opacity: 0, x: 100 }
-                }}>
-                    Contact me
-                </motion.span>
-                <br />
-                <motion.span
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.8, duration: 0.5 }}
-                    variants={{
-                    visible: { color: '#ff2164', opacity: 1, x: 0 },
-                    hidden: { fontSize: 36, fontWeight: 800, color: '#fff', opacity: 0, x: 100 }
-                }}>
-                    소통하기
-                </motion.span>
-                <br />
-                <br />
-            </h1>
+            <motion.h1
+                className="en"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                variants={{
+                visible: { color: '#ff2164', opacity: 1, x: 0 },
+                hidden: { color: '#fff', opacity: 0, x: showContent ? 100 : -100 }
+            }}>
+                Contact me
+            </motion.h1>
+            <motion.h1
+                className="kr"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ delay: 0.8, duration: 0.5 }}
+                variants={{
+                visible: { color: '#ff2164', opacity: 1, x: 0 },
+                hidden: { color: '#fff', opacity: 0, x: showContent ? 100 : -100 }
+            }}>
+                소통하기
+            </motion.h1>
 
             <div className="contact">
                 <form ref={form} onSubmit={sendEmail}>
@@ -154,36 +151,67 @@ const AboutAndContact = () => {
     return (
         <div className="about-page">
             <div className="page">
+
+                {!showContent && (
+                    <div>
+                        <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 1, duration: 0.5 }}
+                        variants={{
+                        hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '16%', right: '10%', background: '#36242a' },
+                        visible: { scale: 1, rotate: '90deg' }
+                        }}/>
+
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ delay: 1.2, duration: 0.5 }}
+                            variants={{
+                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '36%', right: '20%', background: '#401422' },
+                            visible: { scale: 1, rotate: '-90deg' }
+                        }}/>
+
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ delay: 1.4, duration: 0.5 }}
+                            variants={{
+                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '26%', right: '30%', background: '#210e14' },
+                            visible: { scale: 1, rotate: '90deg' }
+                        }}/>
+                    </div>
+                )}
     
                 <div className="left">
-                    <h1>
-                        <motion.span
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2, duration: 0.5 }}
-                            variants={{
-                            visible: { color: '#ff2164', opacity: 1, x: 0 },
-                            hidden: { fontSize: 48, fontWeight: 400, color: '#fff', opacity: 0, x: -100 }
-                        }}>
-                            More about me
-                        </motion.span>
-                        <br />
-                        <motion.span
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.4, duration: 0.5 }}
-                            variants={{
-                            visible: { color: '#ff2164', opacity: 1, x: 0 },
-                            hidden: { fontSize: 36, fontWeight: 800, color: '#fff', opacity: 0, x: -100 }
-                        }}>
-                            그 외의 정보
-                        </motion.span>
-                    </h1>
+                    <motion.h1
+                        className="en"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                        variants={{
+                        visible: { color: '#ff2164', opacity: 1, x: 0 },
+                        hidden: { color: '#fff', opacity: 0, x: -100 }
+                    }}>
+                        More about me
+                    </motion.h1>
+                    <motion.h1
+                        className="kr"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                        variants={{
+                        visible: { color: '#ff2164', opacity: 1, x: 0 },
+                        hidden: { color: '#fff', opacity: 0, x: -100 }
+                    }}>
+                        그 외의 정보
+                    </motion.h1>
 
-                    <br />
-                    <br />
                     <ul>
                         <motion.li 
                             className="interest"
@@ -240,26 +268,27 @@ const AboutAndContact = () => {
                 
                     <br />
                     <motion.p
+                        className='en'
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         transition={{ delay: 0.8, duration: 0.5 }}
                         variants={{
-                        visible: {  color: '#f1ced9', opacity: 1, y: 0 },
-                        hidden: { fontSize: 20, lineHeight: 1, fontWeight: 10, color: '#fff', opacity: 0, y: 100 }
+                        visible: { color: '#f1ced9', opacity: 1, y: 0 },
+                        hidden: { color: '#fff', opacity: 0, y: 100 }
                     }}>
                         asdf asdf asd fasd fa sdf asdf asd f asdfasdf asdf asdf asdf asdf asdfasdfasd
                     </motion.p>
                     <br />
-                    <br />
                     <motion.p
+                        className='kr'
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         transition={{ delay: 1, duration: 0.5 }}
                         variants={{
-                        visible: {  color: '#f1ced9', opacity: 1, y: 0 },
-                        hidden: { fontSize: 16, lineHeight: 1, fontWeight: 10, color: '#fff', opacity: 0, y: 100 }
+                        visible: { color: '#f1ced9', opacity: 1, y: 0 },
+                        hidden: { color: '#fff', opacity: 0, y: 100 }
                     }}>
                         ㅁㄴㅇ랴ㅐ ㅁ노디ㅑㄹ ㅗㅁ니ㅑ뎌ㅗㄹ ㅑㅕㅣㅁ농리ㅑㅕ 모냥ㄹ ㅚ먀농ㄹ ㅣㅕㅑㅁ녀도ㅑㅣ ㄹ
                     </motion.p>

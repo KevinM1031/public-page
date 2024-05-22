@@ -59,18 +59,18 @@ const Intro = () => {
                         />
                         <hr className='topLine' />
                     </span>
-                    </h1>
+                </h1>
 
-                    <p>
+                <p>
                     <span className='middleTop'>
                         Android Developer / Illustrator / Translator
                     </span>
                     <span className='middleBottom'>
                         안드로이드 개발자 / 일러스트레이터 / 번역가
                     </span>
-                    </p>
-                    
-                    <h1>
+                </p>
+                
+                <h1>
                     <span className="bottomHalf">
                         <hr className='bottomLine' />
                         <br />

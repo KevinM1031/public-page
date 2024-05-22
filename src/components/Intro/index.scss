@@ -8,8 +8,9 @@
     left: 60%;
 
     @media screen and (max-width: 1200px) {
-      left: 50%;
+      left: 55vw;
       transform: translateX(-50%);
+      width: 70vw;
     }
   }
 
@@ -22,6 +23,10 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     transform: scaleX(0%);
+
+    @media screen and (max-width: 1200px) {
+      width: 70vw;
+    }
   }
 
   .bottomLine {
@@ -33,13 +38,17 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     transform: scaleX(0%);
+
+    @media screen and (max-width: 1200px) {
+      width: 70vw;
+    }
   }
 
   p {
     .middleTop {
       color: #f1ced9;
       font-size: 24px;
-      line-height: 24px;
+      line-height: 20px;
       position: absolute;
       font-family: 'Roboto';
       transform: translateY(40px);
@@ -48,20 +57,30 @@
       animation-delay: 3.2s;
       animation-duration: 1s;
       animation-fill-mode: forwards;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 13px;
+        transform: translateY(15px);
+      }
     }
 
     .middleBottom {
       color: #f1ced9;
       font-size: 20px;
-      line-height: 24px;
+      line-height: 20px;
       position: absolute;
       font-family: 'Roboto';
-      transform: translateY(100px);
+      transform: translateY(105px);
       opacity: 0;
       animation: fadeIn;
       animation-delay: 3.2s;
       animation-duration: 1s;
       animation-fill-mode: forwards;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 10px;
+        transform: translateY(55px);
+      }
     }
   }
 
@@ -81,6 +100,12 @@
       animation-duration: 1s;
       animation-fill-mode: forwards;
       transform: translateY(-71%);
+
+      @media screen and (max-width: 1200px) {
+        transform: translateY(-73%);
+        font-size: 42px;
+        line-height: 48px;
+      }
     }
 
     .bottomHalf {
@@ -93,6 +118,12 @@
       animation-duration: 1s;
       animation-fill-mode: forwards;
       transform: translateY(21%);
+
+      @media screen and (max-width: 1200px) {
+        transform: translateY(23%);
+        font-size: 24px;
+        line-height: 36px;
+      }
     }
 
     img {
@@ -141,6 +172,9 @@
   @keyframes topHalfAnimation {
     from {
       transform: translateY(-71%);
+      @media screen and (max-width: 1200px) {
+        transform: translateY(-73%);
+      }
     }
     to {
       transform: translateY(-111%);
@@ -150,6 +184,9 @@
   @keyframes bottomHalfAnimation {
     from {
       transform: translateY(21%);
+      @media screen and (max-width: 1200px) {
+        transform: translateY(23%);
+      }
     }
     to {
       transform: translateY(71%);
