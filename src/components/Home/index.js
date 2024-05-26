@@ -2,7 +2,7 @@ import Loader from 'react-loaders'
 import Page from './Page'
 import Intro from '../Intro'
 import './index.scss'
-import { motion } from 'framer-motion'
+import Resume from '../../assets/documents/Resume.pdf'
 import AboutAndContact from './AboutAndContact'
 
 const Home = () => {
@@ -27,6 +27,7 @@ const Home = () => {
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}
           link="/public-page/dev"
+          resumeLink={Resume}
         />
 
         <Page 
@@ -34,7 +35,7 @@ const Home = () => {
           titleKor="케릭터 일러스트레이션"
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
-          mirror={true}
+          mirror={window.innerWidth > 1200}
           link="https://www.pixiv.net/en/users/106382305"
         />
 
@@ -44,7 +45,6 @@ const Home = () => {
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}
-          link="/public-page/lang"
         />
 
         <AboutAndContact />

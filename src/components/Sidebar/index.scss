@@ -1,6 +1,6 @@
 .nav-bar {
     background: rgba(0, 0, 0, 0.5);
-    border-right: 1px solid #913e57;
+    border-right: 1px solid #2794ee;
     width: 80px;
     height: 100dvh;
     position: fixed;
@@ -55,7 +55,7 @@
   
       div {
         font-size: 28px;
-        color: #913e57;
+        color: #2794ee;
         display: block;
         line-height: 64px;
         height: 64px;
@@ -72,7 +72,7 @@
           transition: all 0.5s ease-out;
 
           &:hover {  
-            color: #ff2164;
+            color: #6139f0;
             scale: 1.5;
             opacity: 1;
           }
@@ -102,7 +102,7 @@
           margin: 16px auto;
           font-size: 20px;
           height: auto;
-          color: #f1ced9;
+          color: #a5cdd4;
 
           @media screen and (max-width: 1200px) {
             font-size: 16px;
@@ -113,7 +113,7 @@
             transition: all 0.5s ease-out;
   
             &:hover {  
-              color: #ff2164;
+              color: #7853ff;
               scale: 1.5;
             }
           }

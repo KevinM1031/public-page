@@ -35,7 +35,7 @@ const Logo = () => {
               fillOpacity="0%" 
               strokeWidth="1"
               fill="transparent"
-              stroke="#ff2164"
+              stroke="#7853ff"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}

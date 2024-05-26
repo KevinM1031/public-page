@@ -60,7 +60,7 @@
     }
 
     p {
-        color: #f1ced9;
+        color: #a5cdd4;
         margin: 0;
         font-family: 'Roboto';
     }
@@ -106,9 +106,9 @@
     }
 
     .glow-on-hover {
-        color: #ff2164;
+        color: #7853ff;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 800;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
@@ -135,7 +135,7 @@
     
     .glow-on-hover:before {
         content: '';
-        background: linear-gradient(45deg, #ff2164, #f1ced9, #ff2164, #130e10, #ff2164);
+        background: linear-gradient(45deg, #7853ff, #a5cdd4, #7853ff, #0f101a, #7853ff);
         position: absolute;
         top: -2px;
         left:-2px;

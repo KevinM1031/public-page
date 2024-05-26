@@ -1,8 +1,9 @@
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/icon.png'
+import LogoTitle from '../../assets/images/icon192.png'
 import Logo from './Logo'
 import './index.scss'
 import { motion } from 'framer-motion'
+import Motto from './Motto'
 
 const Intro = () => {
   const letterClass = "text-animate"
@@ -14,26 +15,26 @@ const Intro = () => {
         <div className="page">
 
             <motion.div
-            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #401422', borderBottom: '0px solid transparent', top: 0, right: 0, }}
-            animate={{ borderTop: '0px solid transparent', borderRight: '120vh solid #401422', borderBottom: '90vh solid transparent' }}
+            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #1a0c54', borderBottom: '0px solid transparent', top: 0, right: 0, }}
+            animate={{ borderTop: '0px solid transparent', borderRight: '120vh solid #1a0c54', borderBottom: '90vh solid transparent' }}
             transition={{ delay: 1, duration: 0.5 }}
             />
 
             <motion.div
-            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #210e14', borderBottom: '0px solid transparent', top: 0, right: 0, }}
-            animate={{ borderTop: '0px solid transparent', borderRight: '108vh solid #210e14', borderBottom: '80vh solid transparent' }}
+            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #130b33', borderBottom: '0px solid transparent', top: 0, right: 0, }}
+            animate={{ borderTop: '0px solid transparent', borderRight: '108vh solid #130b33', borderBottom: '80vh solid transparent' }}
             transition={{ delay: 1.2, duration: 0.5 }}
             />
 
             <motion.div
-            initial={{  position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #36242a', borderBottom: '0px solid transparent', top: 0, right: 0, }}
-            animate={{ borderTop: '0px solid transparent', borderRight: '96vh solid #36242a', borderBottom: '70vh solid transparent' }}
+            initial={{  position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #241d40', borderBottom: '0px solid transparent', top: 0, right: 0, }}
+            animate={{ borderTop: '0px solid transparent', borderRight: '96vh solid #241d40', borderBottom: '70vh solid transparent' }}
             transition={{ delay: 1.4, duration: 0.5 }}
             />
 
             <motion.div
-            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #130e10', borderBottom: '0px solid transparent', top: 0, right: 0, }}
-            animate={{ borderTop: '0px solid transparent', borderRight: '84vh solid #130e10', borderBottom: '60vh solid transparent' }}
+            initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #0f101a', borderBottom: '0px solid transparent', top: 0, right: 0, }}
+            animate={{ borderTop: '0px solid transparent', borderRight: '84vh solid #0f101a', borderBottom: '60vh solid transparent' }}
             transition={{ delay: 1.6, duration: 0.5 }}
             />
 
@@ -89,6 +90,8 @@ const Intro = () => {
                 </h1>
             </div>
         </div>
+
+        <Motto />
     </div>
     )
 }

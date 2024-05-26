@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import { motion } from 'framer-motion'
 
-const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}) => {
+const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link, resumeLink}) => {
     
     return (
         <div className="page-page">
@@ -14,7 +14,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.5 }}
             variants={{
-              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '16%', left: (mirror ? 'auto' : '10%'), right: (mirror ? '10%' : 'auto'), background: '#36242a' },
+              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '16%', left: (mirror ? 'auto' : '10%'), right: (mirror ? '10%' : 'auto'), background: '#241d40' },
               visible: { scale: 1, rotate: '90deg' }
           }}/>
 
@@ -24,7 +24,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
             viewport={{ once: true }}
             transition={{ delay: 1.2, duration: 0.5 }}
             variants={{
-              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '36%', left: (mirror ? 'auto' : '20%'), right: (mirror ? '20%' : 'auto'), background: '#401422' },
+              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '36%', left: (mirror ? 'auto' : '20%'), right: (mirror ? '20%' : 'auto'), background: '#1a0c54' },
               visible: { scale: 1, rotate: '-90deg' }
           }}/>
 
@@ -34,7 +34,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
             viewport={{ once: true }}
             transition={{ delay: 1.4, duration: 0.5 }}
             variants={{
-              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '26%', left: (mirror ? 'auto' : '30%'), right: (mirror ? '30%' : 'auto'), background: '#210e14' },
+              hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '26%', left: (mirror ? 'auto' : '30%'), right: (mirror ? '30%' : 'auto'), background: '#130b33' },
               visible: { scale: 1, rotate: '90deg' }
           }}/>
 
@@ -55,7 +55,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                   variants={{
-                    visible: { color: '#f1ced9', opacity: 1, x: 0 },
+                    visible: { color: '#a5cdd4', opacity: 1, x: 0 },
                     hidden: { color: '#fff', opacity: 0, x: (mirror ? 200 : -200) }
                 }}>
                   I can do:
@@ -67,7 +67,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4, duration: 0.5 }}
                   variants={{
-                    visible: { color: '#ff2164', opacity: 1, x: 0 },
+                    visible: { color: '#7853ff', opacity: 1, x: 0 },
                     hidden: { color: '#fff', opacity: 0, x: (mirror ? 200 : -200) }
                 }}>
                   {titleEng}
@@ -79,7 +79,7 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                   viewport={{ once: true }}
                   transition={{ delay: 0.6, duration: 0.5 }}
                   variants={{
-                    visible: { color: '#ff2164', opacity: 1, x: 0 },
+                    visible: { color: '#7853ff', opacity: 1, x: 0 },
                     hidden: { color: '#fff', opacity: 0, x: (mirror ? 200 : -200) }
                 }}>
                   {titleKor}
@@ -125,12 +125,12 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                   visible: { opacity: 1, height: 150, y: -50 },
                   hidden: { opacity: 0, height: 150, y: -50 }
               }}>
-                <motion.p className="en" initial={{ color: '#f1ced9' }}>
+                <motion.p className="en" initial={{ color: '#a5cdd4' }}>
                   {descriptionEng}
                 </motion.p>
                 <br />
                 <br />
-                <motion.p className="kr" initial={{ color: '#f1ced9' }}>
+                <motion.p className="kr" initial={{ color: '#a5cdd4' }}>
                   {descriptionKor}
                 </motion.p>
               </motion.div>
@@ -141,8 +141,8 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.5 }}
                 variants={{
-                  visible: { position: 'absolute', color: '#ff2164', opacity: 1, x: 0, right: (mirror ? 0 : 'auto') },
-                  hidden: { position: 'absolute', color: '#fff', opacity: 0, x: (mirror ? 100 : -100), right: (mirror ? 0 : 'auto') },
+                  visible: { position: 'absolute', color: '#7853ff', opacity: 1, scale: 1, right: (mirror ? 0 : 'auto') },
+                  hidden: { position: 'absolute', color: '#fff', opacity: 0, scale: 0, right: (mirror ? 0 : 'auto') },
               }}>
                 <motion.div
                   initial="hidden"
@@ -153,9 +153,25 @@ const Page = ({titleEng, titleKor, descriptionEng, descriptionKor, mirror, link}
                     visible: { y: (window.innerWidth > 1200) ? 35 : 15 },
                     hidden: { y: 0 },
                 }}>
-                  <Link to={link} className="glow-on-hover">
-                    EXPAND
-                  </Link>
+
+                  {link && (
+                    <Link 
+                      to={link} 
+                      className="glow-on-hover" 
+                      style={(!mirror && resumeLink) ? {marginRight: 25} : {}} >
+                      EXPAND 더보기
+                  </Link>)}
+
+                  {resumeLink && (
+                  <a 
+                    href={resumeLink} 
+                    target = "_blank" 
+                    rel="noreferrer" 
+                    className="glow-on-hover" 
+                    style={(mirror && link) ? {marginLeft: 25} : {}}>
+                    RESUME 이력서
+                  </a>)}
+
                 </motion.div>
               </motion.div>
             </div>

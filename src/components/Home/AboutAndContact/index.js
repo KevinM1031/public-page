@@ -42,7 +42,7 @@ const AboutAndContact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 0.5 }}
                 variants={{
-                visible: { color: '#ff2164', opacity: 1, x: 0 },
+                visible: { color: '#7853ff', opacity: 1, x: 0 },
                 hidden: { color: '#fff', opacity: 0, x: showContent ? 100 : -100 }
             }}>
                 Contact me
@@ -54,7 +54,7 @@ const AboutAndContact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.8, duration: 0.5 }}
                 variants={{
-                visible: { color: '#ff2164', opacity: 1, x: 0 },
+                visible: { color: '#7853ff', opacity: 1, x: 0 },
                 hidden: { color: '#fff', opacity: 0, x: showContent ? 100 : -100 }
             }}>
                 소통하기
@@ -140,7 +140,7 @@ const AboutAndContact = () => {
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: 100 }}}
                     >
-                        <input className="button" type="submit" value="SEND" />
+                        <input className="button" type="submit" value="SEND 전송" />
                     </motion.li>
                     </ul>
                 </form>
@@ -160,7 +160,7 @@ const AboutAndContact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 1, duration: 0.5 }}
                         variants={{
-                        hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '16%', right: '10%', background: '#36242a' },
+                        hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '16%', right: '10%', background: '#241d40' },
                         visible: { scale: 1, rotate: '90deg' }
                         }}/>
 
@@ -170,7 +170,7 @@ const AboutAndContact = () => {
                             viewport={{ once: true }}
                             transition={{ delay: 1.2, duration: 0.5 }}
                             variants={{
-                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '36%', right: '20%', background: '#401422' },
+                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '36%', right: '20%', background: '#1a0c54' },
                             visible: { scale: 1, rotate: '-90deg' }
                         }}/>
 
@@ -180,7 +180,7 @@ const AboutAndContact = () => {
                             viewport={{ once: true }}
                             transition={{ delay: 1.4, duration: 0.5 }}
                             variants={{
-                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '26%', right: '30%', background: '#210e14' },
+                            hidden: { position: 'absolute', scale: 0, width: (window.innerWidth > 1200) ? 500 : '60vw', height: (window.innerWidth > 1200) ? 500 : '60vw', top: '26%', right: '30%', background: '#130b33' },
                             visible: { scale: 1, rotate: '90deg' }
                         }}/>
                     </div>
@@ -194,7 +194,7 @@ const AboutAndContact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                         variants={{
-                        visible: { color: '#ff2164', opacity: 1, x: 0 },
+                        visible: { color: '#7853ff', opacity: 1, x: 0 },
                         hidden: { color: '#fff', opacity: 0, x: -100 }
                     }}>
                         More about me
@@ -206,7 +206,7 @@ const AboutAndContact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                         variants={{
-                        visible: { color: '#ff2164', opacity: 1, x: 0 },
+                        visible: { color: '#7853ff', opacity: 1, x: 0 },
                         hidden: { color: '#fff', opacity: 0, x: -100 }
                     }}>
                         그 외의 정보
@@ -274,7 +274,7 @@ const AboutAndContact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.8, duration: 0.5 }}
                         variants={{
-                        visible: { color: '#f1ced9', opacity: 1, y: 0 },
+                        visible: { color: '#a5cdd4', opacity: 1, y: 0 },
                         hidden: { color: '#fff', opacity: 0, y: 100 }
                     }}>
                         asdf asdf asd fasd fa sdf asdf asd f asdfasdf asdf asdf asdf asdf asdfasdfasd
@@ -287,7 +287,7 @@ const AboutAndContact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 1, duration: 0.5 }}
                         variants={{
-                        visible: { color: '#f1ced9', opacity: 1, y: 0 },
+                        visible: { color: '#a5cdd4', opacity: 1, y: 0 },
                         hidden: { color: '#fff', opacity: 0, y: 100 }
                     }}>
                         ㅁㄴㅇ랴ㅐ ㅁ노디ㅑㄹ ㅗㅁ니ㅑ뎌ㅗㄹ ㅑㅕㅣㅁ농리ㅑㅕ 모냥ㄹ ㅚ먀농ㄹ ㅣㅕㅑㅁ녀도ㅑㅣ ㄹ

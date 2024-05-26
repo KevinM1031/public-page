@@ -3,8 +3,11 @@ import Loader from 'react-loaders'
 import './index.scss'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import Resume from '../../assets/documents/Resume.pdf'
 
 const Dev = () => {
+
+    window.scrollTo(0, 0);
 
     const [showContent, setShowContent] = useState(window.innerWidth >= 1200);
 
@@ -42,26 +45,26 @@ const Dev = () => {
                 <div className="page">
 
                 <motion.div
-                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #401422', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
-                    animate={{ borderTop: '240vh solid transparent', borderRight: '180vh solid #401422' }}
+                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #1a0c54', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
+                    animate={{ borderTop: '240vh solid transparent', borderRight: '180vh solid #1a0c54' }}
                     transition={{ delay: 1, duration: 0.5 }}
                 />
 
                 <motion.div
-                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #210e14', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
-                    animate={{ borderTop: '216vh solid transparent', borderRight: '160vh solid #210e14' }}
+                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #130b33', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
+                    animate={{ borderTop: '216vh solid transparent', borderRight: '160vh solid #130b33' }}
                     transition={{ delay: 1.2, duration: 0.5 }}
                 />
 
                 <motion.div
-                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #36242a', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
-                    animate={{ borderTop: '192vh solid transparent', borderRight: '140vh solid #36242a' }}
+                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #241d40', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
+                    animate={{ borderTop: '192vh solid transparent', borderRight: '140vh solid #241d40' }}
                     transition={{ delay: 1.4, duration: 0.5 }}
                 />
 
                 <motion.div
-                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #130e10', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
-                    animate={{ borderTop: '168vh solid transparent', borderRight: '120vh solid #130e10' }}
+                    initial={{ position: 'absolute', borderTop: '0px solid transparent', borderRight: '0px solid #0f101a', borderBottom: '0px solid transparent', bottom: 0, right: 0, }}
+                    animate={{ borderTop: '168vh solid transparent', borderRight: '120vh solid #0f101a' }}
                     transition={{ delay: 1.6, duration: 0.5 }}
                 />
 
@@ -69,47 +72,52 @@ const Dev = () => {
                     <motion.h1
                         className="en"
                         initial={{ color: '#fff', opacity: 0, x: -300 }}
-                        animate={{ color: '#ff2164', opacity: 1, x: 0 }}
+                        animate={{ color: '#7853ff', opacity: 1, x: 0 }}
                         transition={{ delay: 1.2, duration: 0.5 }}>
                         Android Development
                     </motion.h1>
                     <motion.h1
                         className="kr"
                         initial={{ color: '#fff', opacity: 0, x: -300 }}
-                        animate={{ color: '#ff2164', opacity: 1, x: 0 }}
+                        animate={{ color: '#7853ff', opacity: 1, x: 0 }}
                         transition={{ delay: 1.4, duration: 0.5 }}>
                         안드로이드 앱 개발
                     </motion.h1>
 
                     <h2 className="techs">
+                    <motion.a 
+                        href={Resume} 
+                        target = "_blank" 
+                        rel="noreferrer" 
+                        className="glow-on-hover"
+                        initial={{ opacity: 0, x: -300 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 1.6, duration: 0.5 }}
+                        >
+                        RESUME 이력서
+                    </motion.a>
+                    <br/>
+                    <br/>
                         <motion.span
                             className="tech-item"
                             initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 20 }}
-                            transition={{ delay: 1.6, duration: 0.5 }}>
-                            {">> Kotlin"}
-                        </motion.span>
-                        <br />
-                        <motion.span
-                            className="tech-item"
-                            initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 40 }}
+                            animate={{ color: '#a5cdd4', opacity: 1, x: 20 }}
                             transition={{ delay: 1.7, duration: 0.5 }}>
-                            {">> Java"}
+                            {">> Kotlin / Java"}
                         </motion.span>
                         <br />
                         <motion.span
                             className="tech-item"
                             initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 60 }}
+                            animate={{ color: '#a5cdd4', opacity: 1, x: 40 }}
                             transition={{ delay: 1.8, duration: 0.5 }}>
-                            {">> Jetpack Compose"}
+                            {">> XML / Jetpack Compose"}
                         </motion.span>
                         <br />
                         <motion.span
                             className="tech-item"
                             initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 80 }}
+                            animate={{ color: '#a5cdd4', opacity: 1, x: 60 }}
                             transition={{ delay: 1.9, duration: 0.5 }}>
                             {">> Coroutines"}
                         </motion.span>
@@ -117,26 +125,11 @@ const Dev = () => {
                         <motion.span
                             className="tech-item"
                             initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 100 }}
+                            animate={{ color: '#a5cdd4', opacity: 1, x: 80 }}
                             transition={{ delay: 2, duration: 0.5 }}>
-                            {">> Room Database"}
+                            {">> Firebase / Retrofit / Room Database"}
                         </motion.span>
                         <br />
-                        <motion.span
-                            className="tech-item"
-                            initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 120 }}
-                            transition={{ delay: 2.1, duration: 0.5 }}>
-                            {">> Retrofit"}
-                        </motion.span>
-                        <br />
-                        <motion.span
-                            className="tech-item"
-                            initial={{ color: '#fff', opacity: 0, x: -100 }}
-                            animate={{ color: '#f1ced9', opacity: 1, x: 140 }}
-                            transition={{ delay: 2.2, duration: 0.5 }}>
-                            {">> Firebase"}
-                        </motion.span>
                     </h2>
                     <p>
                         <motion.span 
@@ -146,31 +139,31 @@ const Dev = () => {
                             transition={{ delay: 1.5, duration: 1 }}>
 
                             <motion.span
-                                initial={{ position: 'absolute', color: '#fff', fontSize: showContent ? 28 : 20, fontFamily: "Coolvetica", fontWeight: 400, x: 10, y: 10 }}
-                                animate={{ color: '#ff2164' }}
+                                initial={{ position: 'relative', color: '#fff', fontSize: showContent ? 28 : 20, fontFamily: "Coolvetica", fontWeight: 400, top: 15, left: 10 }}
+                                animate={{ color: '#7853ff' }}
                                 transition={{ delay: 1.7, duration: 1 }}>
                                 {"Experience"}
+                            </motion.span>
+                            <motion.span
+                                initial={{ position: 'relative', color: '#fff', fontSize: showContent ? 22 : 16, fontFamily: "Coolvetica", fontWeight: 800, top: 15, left: 10 }}
+                                animate={{ color: '#7853ff' }}
+                                transition={{ delay: 1.7, duration: 1 }}>
+                                {" / 학력 및 경력"}
                             </motion.span>
 
                             <br />
                             <br />
                             <ul>
                                 <li>
-                                    2019 Accepted to University of Rochester, BS in Computer Science
+                                    2022 Graduated from Georgia Institute of Technology, BS in Computational Media, Highest Honor
                                     <br />
-                                    로체스터 대학교 컴퓨터공학과 입학
+                                    조지아 공과대학교 전산미디어학과 최우수졸업
                                 </li>
                                 <br />
                                 <li>
-                                    2020 Transferred to Georgia Institute of Technology, BS in Computational Media
+                                    2023 Earned: Korean Certificate of Engineer Information Processing
                                     <br />
-                                    조지아 공과대학교 전산미디어학과 편입
-                                </li>
-                                <br />
-                                <li>
-                                    2022 Graduated from Georgia Institute of Technology, Highest Honor
-                                    <br />
-                                    조지아 공과대학교 최우수졸업
+                                    정보처리기사 자격증 취득
                                 </li>
                             </ul>
 

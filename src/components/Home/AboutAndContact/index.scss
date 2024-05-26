@@ -39,12 +39,13 @@
         clear: both;
         position: relative;
         right: 0;
+        font-family: "Roboto";
     }
 
     p {
-        color: #f1ced9;
+        color: #a5cdd4;
         margin: 0;
-        font-family: sans-serif;
+        font-family: "Roboto";
     }
 
     p.en {
@@ -70,7 +71,7 @@
     }
     
     h1 {
-        color: #ff2164;
+        color: #7853ff;
         margin: 0;
         font-family: 'Coolvetica';
     }
@@ -111,7 +112,7 @@
         .icon {
             position: relative;
             float: left;
-            color: #ff2164;
+            color: #7853ff;
             font-size: 60px;
             width: 80px;
             margin-right: 25px;
@@ -135,7 +136,7 @@
             }
 
             .en {
-                color: #f1ced9;
+                color: #a5cdd4;
                 font-size: 20px;
                 float: top;
 
@@ -145,7 +146,7 @@
             }
         
             .kr {
-                color: #f1ced9;
+                color: #a5cdd4;
                 font-size: 16px;
                 float: bottom;
 
@@ -158,12 +159,13 @@
     
     input {
         width: 100%;
-        color: #f1ced9;
+        color: #a5cdd4;
         padding: 0px 20px;
         background-color: transparent;
         border: 0;
         height: 50px;
         font-size: 16px;
+        font-weight: 800;
         border-radius: 10px;
         box-sizing: border-box;
         font-family: "Roboto";
@@ -177,8 +179,10 @@
     }
 
     .button {
-        color: #ff2164;
+        color: #7853ff;
         letter-spacing: 4px;
+        font-family: "Roboto";
+        font-weight: 800;
     }
     
     textarea {
@@ -188,10 +192,12 @@
         border: 0;
         background-color: transparent;
         font-size: 16px;
-        color: #f1ced9;
+        color: #a5cdd4;
         padding: 20px 20px;
+        font-weight: 800;
         border-radius: 10px;
         box-sizing: border-box;
+        font-family: "Roboto";
 
         @media screen and (max-width: 1200px) {
             height: 150px;
@@ -202,11 +208,11 @@
       }
     
     .glow-on-hover-text {
-        color: #ff2164;
+        color: #7853ff;
         width: 100%;
         font-size: 13px;
-        font-weight: 400;
-        font-family: sans-serif;
+        font-weight: 800;
+        font-family: "Roboto";
         text-decoration: none;
         padding: 0;
         border: 1px solid;
@@ -226,7 +232,7 @@
     
     .glow-on-hover-text:before {
         content: '';
-        background: linear-gradient(45deg, #ff2164, #f1ced9, #ff2164, #130e10, #ff2164);
+        background: linear-gradient(45deg, #7853ff, #a5cdd4, #7853ff, #0f101a, #7853ff);
         position: absolute;
         top: -2px;
         left:-2px;

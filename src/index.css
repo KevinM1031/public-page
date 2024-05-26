@@ -15,7 +15,7 @@ html {
 
   @media screen and (max-width: 380px) {
     overflow-x: auto;
-
+    max-width: 380px;
   }
 }
 
