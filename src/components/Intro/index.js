@@ -8,7 +8,7 @@ import Motto from './Motto'
 const Intro = () => {
   const letterClass = "text-animate"
   const nameArray1 = ['e', 'v', 'i', 'n.']
-  const nameArray2 = ['민', '경', '한', ' ', '입', '니', '다.']
+  const nameArray2 = ['a', 's', 'd', 'd', 'f', 'a', 's.']
 
   return (
     <div className="intro-page">
@@ -64,10 +64,10 @@ const Intro = () => {
 
                 <p>
                     <span className='middleTop'>
-                        Android Developer / Illustrator / Translator
+                        Programmer / Illustrator / Exotic Pet Breeder
                     </span>
                     <span className='middleBottom'>
-                        안드로이드 개발자 / 일러스트레이터 / 번역가
+                        개발자 / 일러스트레이터 / 브리더
                     </span>
                 </p>
                 

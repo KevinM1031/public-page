@@ -55,7 +55,7 @@ const Motto = () => {
                         visible: { color: '#7853ff', opacity: 1, filter: "blur(0px)", scale: 1 },
                         hidden: { color: '#fff', opacity: 0, filter: "blur(30px)", scale: 3 }
                     }}>
-                        "A day without learning is a day spent unalive."
+                        "asdf"
                     </motion.h1>
                     <motion.p
                         className='en'
@@ -81,7 +81,7 @@ const Motto = () => {
                         visible: { color: '#7853ff', opacity: 1, filter: "blur(0px)", scale: 1 },
                         hidden: { color: '#fff', opacity: 0, filter: "blur(30px)", scale: 3 }
                     }}>
-                        "학습이 없는 날은 죽은 날이다."
+                        "asdf"
                     </motion.h1>
                     <motion.p
                         className='kr'

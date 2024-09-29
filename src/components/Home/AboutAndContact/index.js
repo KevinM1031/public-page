@@ -225,9 +225,9 @@ const AboutAndContact = () => {
                         >
                             <PiUser className="icon" />
                             <p className="text">
-                                <span className="en">Male, born in October 31th, 2000</span>
+                                <span className="en">asdf</span>
                                 <br />
-                                <span className="kr">남, 2000년 10월 31일생</span>
+                                <span className="kr">asdf</span>
                             </p>
                         </motion.li>
                         <motion.li 
@@ -242,9 +242,9 @@ const AboutAndContact = () => {
                         >
                             <PiMapPinArea className="icon" />
                             <p className="text">
-                                <span className="en">Seoul, Republic of Korea</span>
+                                <span className="en">asdf</span>
                                 <br />
-                                <span className="kr">대한민국 서울 거주</span>
+                                <span className="kr">asdf</span>
                             </p>
                         </motion.li>
                         <motion.li 
@@ -259,9 +259,9 @@ const AboutAndContact = () => {
                         >
                             <PiSuitcase className="icon" />
                             <p className="text">
-                                <span className="en">{"Currently enlisted in the Korean Army (~June 25th)"}</span>
+                                <span className="en">asdf</span>
                                 <br />
-                                <span className="kr">{"현) 대한민국 육군 (6월 25일 전역)"}</span>
+                                <span className="kr">asdf</span>
                             </p>
                         </motion.li>
                     </ul>

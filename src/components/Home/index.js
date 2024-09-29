@@ -21,8 +21,8 @@ const Home = () => {
         <Intro />
         
         <Page 
-          titleEng="Android Development"
-          titleKor="안드로이드 앱 개발"
+          titleEng="Programming"
+          titleKor="프로그래밍"
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}
@@ -31,8 +31,8 @@ const Home = () => {
         />
 
         <Page 
-          titleEng="Character Illustration"
-          titleKor="케릭터 일러스트레이션"
+          titleEng="Art & Illustration"
+          titleKor="일러스트레이션"
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={window.innerWidth > 1200}
@@ -40,8 +40,8 @@ const Home = () => {
         />
 
         <Page 
-          titleEng="KR⇄EN Translation"
-          titleKor="한영 · 영한번역"
+          titleEng="Reptile Breeding"
+          titleKor="파충류 브리딩"
           descriptionEng="This is a placeholder description text that is to be replaced later on with something that actually describes this section with sufficient detail, while keeping things concise at the same time."
           descriptionKor="이 문장은 위 영어 문장을 한국어로 번역한 문장이 될 것이나 아직 위 문장을 완성하지 못했기 때문에 이 문장 역시 임시방편으로 별 의미 없는 내용으로 구성되어 있습니다."
           mirror={false}

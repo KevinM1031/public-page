@@ -82,18 +82,18 @@ const Sidebar = () => {
           <div><FaEnvelope /></div>
         </Link>
         <a 
-          href="https://kevinm1031.github.io/digital-clock/?del=25" target="_blank" rel="noreferrer">
+          href="https://example.com/" target="_blank" rel="noreferrer">
           <div className="hidden"><FaClock /></div>
         </a>
         <a 
-          href="https://kevinm1031.github.io/Exponentiation_Bubbles/" target="_blank" rel="noreferrer">
+          href="https://example.com/" target="_blank" rel="noreferrer">
           <div className="hidden"><FaGamepad /></div>
         </a>
       </nav>
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/kevin-min-3b92251b8/"
+            href="https://example.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -102,7 +102,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/KevinM1031"
+            href="https://example.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -110,7 +110,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.pixiv.net/en/users/106382305"
+          <a href="https://example.com/"
             rel="noreferrer" 
             target="_blank">
             <FaPixiv />
@@ -118,7 +118,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/kevinmin1031/"
+            href="https://example.com/"
             rel="noreferrer"
             target="_blank"
           >

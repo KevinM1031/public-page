@@ -74,14 +74,14 @@ const Dev = () => {
                         initial={{ color: '#fff', opacity: 0, x: -300 }}
                         animate={{ color: '#7853ff', opacity: 1, x: 0 }}
                         transition={{ delay: 1.2, duration: 0.5 }}>
-                        Android Development
+                        asdf
                     </motion.h1>
                     <motion.h1
                         className="kr"
                         initial={{ color: '#fff', opacity: 0, x: -300 }}
                         animate={{ color: '#7853ff', opacity: 1, x: 0 }}
                         transition={{ delay: 1.4, duration: 0.5 }}>
-                        안드로이드 앱 개발
+                        asdf
                     </motion.h1>
 
                     <h2 className="techs">
@@ -94,7 +94,7 @@ const Dev = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 1.6, duration: 0.5 }}
                         >
-                        RESUME 이력서
+                        asdf
                     </motion.a>
                     <br/>
                     <br/>
@@ -155,15 +155,15 @@ const Dev = () => {
                             <br />
                             <ul>
                                 <li>
-                                    2022 Graduated from Georgia Institute of Technology, BS in Computational Media, Highest Honor
+                                    asdf
                                     <br />
-                                    조지아 공과대학교 전산미디어학과 최우수졸업
+                                    asdf
                                 </li>
                                 <br />
                                 <li>
-                                    2023 Earned: Korean Certificate of Engineer Information Processing
+                                    asdf
                                     <br />
-                                    정보처리기사 자격증 취득
+                                    asdf
                                 </li>
                             </ul>
 
